@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qm0-zi-EQD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Book-->
+        <scene sceneID="kEZ-Fy-dZ0">
+            <objects>
+                <viewController id="r7g-GA-rkS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eXa-pt-vXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="leA-Yi-M3f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Audio Book" image="music.mic" catalog="system" id="ESR-15-aUc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uK-79-0OW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="48"/>
+        </scene>
+        <!--more-->
+        <scene sceneID="XGq-6r-kET">
+            <objects>
+                <viewController id="I84-3G-Ggw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lML-Dc-mLV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hZV-8j-AtT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="more" image="ellipsis" catalog="system" id="HtV-hw-LEz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHq-id-Qvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="825"/>
+        </scene>
+        <!--Exam Prep-->
+        <scene sceneID="dO3-9x-3hG">
+            <objects>
+                <viewController id="BcC-UR-baw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tTw-8z-xgy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9zt-Ee-5ci"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exam Prep" image="books.vertical.fill" catalog="system" id="PfF-JJ-TcD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfu-29-Eft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107" y="-2102"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="atX-hR-wXo">
+            <objects>
+                <viewController id="ATk-t3-IvB" customClass="HomeViewController" customModule="Design_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OuA-L1-J7z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cqW-O9-er0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ATk-t3-IvB" id="7d4-qe-bba"/>
+                                    <outlet property="delegate" destination="ATk-t3-IvB" id="OtA-23-t4J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqr-eg-RSk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cqW-O9-er0" firstAttribute="top" secondItem="eqr-eg-RSk" secondAttribute="top" id="FW7-P5-813"/>
+                            <constraint firstItem="eqr-eg-RSk" firstAttribute="bottom" secondItem="cqW-O9-er0" secondAttribute="bottom" id="NJQ-WJ-5RT"/>
+                            <constraint firstItem="cqW-O9-er0" firstAttribute="leading" secondItem="eqr-eg-RSk" secondAttribute="leading" id="kz8-fF-fPX"/>
+                            <constraint firstItem="eqr-eg-RSk" firstAttribute="trailing" secondItem="cqW-O9-er0" secondAttribute="trailing" id="tsR-P2-6xE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="uUb-b3-ssb"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="cqW-O9-er0" id="N7k-8k-KP8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nzm-UP-RKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="-1343"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="HXL-Rw-rXv">
+            <objects>
+                <viewController id="U8g-4q-y6s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZRv-kD-iUz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b72-jB-BXE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Courses" image="book.fill" catalog="system" id="UxU-iJ-eSF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsz-Uc-WjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="-655"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QVJ-2a-Mij">
+            <objects>
+                <tabBarController id="qm0-zi-EQD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="weM-dK-EQD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="U8g-4q-y6s" kind="relationship" relationship="viewControllers" id="8gv-A5-XHJ"/>
+                        <segue destination="r7g-GA-rkS" kind="relationship" relationship="viewControllers" id="gNj-sh-err"/>
+                        <segue destination="ATk-t3-IvB" kind="relationship" relationship="viewControllers" id="WLG-tp-IAr"/>
+                        <segue destination="BcC-UR-baw" kind="relationship" relationship="viewControllers" id="K7W-J6-kZy"/>
+                        <segue destination="I84-3G-Ggw" kind="relationship" relationship="viewControllers" id="ltL-1o-8Ro"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e76-Vm-VMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="-351"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="music.mic" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
